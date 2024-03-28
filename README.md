@@ -17,4 +17,4 @@ To run the app, you need to have a `Custom Search API Key` and a `Context Key`.
   - From *What to Search?* choose *Search the entire web* and leave all the other options be.
   - Then you will be given a html code with cx=________________. Whatever is after the *cx=* is your Context Key.
 
-Copy both the keys and paste them in `lib/config/api_json.dart` file.
+Copy both the keys and paste them in `lib/config/api_keys.dart` file.
