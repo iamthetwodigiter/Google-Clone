@@ -1,16 +1,20 @@
-# google_clone
+# Google Clone
 
-A new Flutter project.
+## Made using Flutter
 
-## Getting Started
+To run the app, you need to have a `Custom Search API Key` and a `Context Key`.
 
-This project is a starting point for a Flutter application.
+- `Custom Search API Key`
+  - Go to [this site](https://console.cloud.google.com/) and create a project.
+  - From the hamburger icon, go to API and Services and Enable API and Services.
+  - You will be redirected to API Library Page. Search for Custom Search and enable it for the project.
+  - Then again from the hamburger icon, go to same API and Services page and Credentials from left menu. Then Create Credentials and then create and API key.
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- `Context Key`
+  - Go to [this site](https://programmablesearchengine.google.com/controlpanel/create).
+  - Enter any name for the search engine.
+  - From *What to Search?* choose *Search the entire web* and leave all the other options be.
+  - Then you will be given a html code with cx=________________. Whatever is after the *cx=* is your Context Key.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Copy both the keys and paste them in `lib/config/api_json.dart` file.
